@@ -17,7 +17,7 @@ const Login = () => {
                 <h2>Welcome Back</h2>
                 <h5>Login to your account</h5>
               
-             <div className='form2 pt-2'>
+             <div className='form2 mt-4'>
                 <h3>ABC COMPANY</h3>
                 <div className="mb-3 mt-3">
                     <label  className="form-label">User Name</label>
@@ -28,13 +28,13 @@ const Login = () => {
                     <label  className="form-label">Password</label>
                     <input type="password" id="inputPassword5" className="form-control" aria-labelledby="passwordHelpBlock"/>
                 </div>
-                <button type="submit" className="btn btn-primary mt-4">Login</button>
+                <div><button type="submit" className=" btn-primary Loginbtn mt-5">Login</button></div>
                 <div  className="form-text mt-3">
-                    Still Have No account? <button type='button' onClick={onClicAbout}><span className="text-warning " >SIGNUP </span></button> Now
+                    Still Have No account ? <span className="text-warning " onClick={onClicAbout} >SIGNUP </span> Now
                 </div>
 
              </div>
-             <div className="ms-3 mt-2 d-flex" style={{ fontSize: '11px', display: 'flex'}}>
+             <div className="ms-3 mt-2 d-flex gap-3" style={{ fontSize: '11px', display: 'flex'}}>
                 <div className="me-5"><span className="text-white">Version 1.0</span></div>
                 <span className="text-white ms-5"><b>About Us</b></span>
                 <span className="text-white ms-5"><b>Privacy</b></span>

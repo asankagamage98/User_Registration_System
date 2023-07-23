@@ -1,4 +1,4 @@
-/* Styles for screens with a maximum width of 600px */
+
 @media (max-width: 600px) {
     .form1 {
       width: 80%;
@@ -15,7 +15,7 @@
 
 
 
-.login{
+.signup{
     background-color:#205387;
     min-height:100vh;
     margin: 0;
@@ -37,7 +37,7 @@
     flex-direction: column;
     background-color: #FFFFFF;
     border-radius: 20px;
-    height:auto;   /*changebefore */
+    height:auto;   
     margin-top:15px;
     
 }
@@ -51,12 +51,11 @@
 .form2 > h3 {
     margin-top: 30px;
     color: #205387;
-    font-weight: bold;
+
 }
 .form-control{
    width:380px !important;
    height:35px !important;
-  
    border: 2px solid #9B9A9A !important;
    border-radius: 6px !important ;
   
@@ -69,22 +68,18 @@
   
 }
 
-.btn-primary  {
-    width: 380px !important;
-    height:40px !important;
-    border-radius:1px !important;
+.Createbtn  {
+    width: 380px ;
+    height:45px ;
+    color: #ffff;
+    font-weight: bold;
+    border-radius:1px;
     background-color:#205387 !important;
     border-radius: 6px !important ;
 
 }
 
-.form-text {
-     
-    text-align: left !important ; 
-    margin-right:150px !important;
-    margin-bottom:20px;
-   
-}
+
 
 .text-input{
     width:178px !important;
@@ -96,8 +91,7 @@
     align-items: center;
     flex-direction: column;
     font-size:15px !important;
-    color: black !important;
-    font-weight: bold; 
+     
 }
 
 .input-number{
@@ -108,6 +102,7 @@
 .icon1 {
     font-size: 30px;
     color: #ffff;
+  
 
 }
 

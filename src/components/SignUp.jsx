@@ -1,13 +1,21 @@
 import '../assets/styles/SignUp.css'
-
+import { useNavigate } from 'react-router-dom';
 
 
 const SignUp = () => {
+
+        const navigate = useNavigate();
+
+        const onClickBack = ()=>{
+            navigate('/');
+        }
+        
+
     return (
-        <div className ='login'>
+        <div className ='signup'>
         <form className='form1'>
-            <div className='d-flex align-items-center gap-3 icon1'>
-               <i className="fa-solid fa-angle-left"></i>
+            <div className='d-flex align-items-center gap-3 icon1 '>
+               <i className="fa-solid fa-angle-left mt-1" onClick={onClickBack}></i>
                <h4 className='p-0 m-0'>Create Account</h4>
             </div>
              
@@ -56,15 +64,13 @@ const SignUp = () => {
                     <input type="password" id="inputPassword5" className="form-control" aria-labelledby="passwordHelpBlock"/>
                 </div>
 
-                <button type="submit" className="btn btn-primary mt-2">Login</button>
-                <div  className="form-text mt-2">
-                    Still Have No account? <span className="text-warning ">SIGNUP </span>Now
-                </div>
+                <button type="submit" className=" btn-primary Createbtn mt-2 mb-4 ">Create Account</button>
+               
 
              </div>
 
           </div>
-          <div className="ms-3 mt-2 d-flex" style={{ fontSize: '11px', display: 'flex'}}>
+          <div className="ms-3 mt-2 d-flex mb-5" style={{ fontSize: '11px', display: 'flex'}}>
              <div className="me-5"><span className="text-white">Version 1.0</span></div>
              <span className="text-white ms-5"><b>About Us</b></span>
              <span className="text-white ms-5"><b>Privacy</b></span>
