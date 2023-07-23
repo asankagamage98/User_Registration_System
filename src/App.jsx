@@ -1,6 +1,10 @@
-// import Login from "./components/Login"
+
 import '../src/assets/styles/App.css'
-import Navbar from "./components/Navbar"
+import Routers from './routes/Routers'
+
+
+
+
 
 function App() {
  
@@ -8,8 +12,7 @@ function App() {
   return (
 
       <div className="">
-        {/* <Login/> */}
-        <Navbar/>
+        <Routers/>
       </div>
 
   )
