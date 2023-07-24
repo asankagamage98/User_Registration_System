@@ -1,18 +1,41 @@
 import { useNavigate } from 'react-router-dom';
-import "../assets/styles/Login.css"
+import "../assets/styles/Login.css";
+import { useFormik } from 'formik';
+import loginValidations from '../validations/loginValidations';
+import { useDispatch } from 'react-redux';
+import { login } from '../app/redux/auth/authAction';
 
 const Login = () => {
 
-    
+  const dispatch = useDispatch();
   const navigate = useNavigate();
   
   const onClicAbout = () => {
     navigate('singup');
   }
 
+
+    const formik = useFormik({
+      initialValues: {
+        username: "",
+        password: ""
+      },
+      validationSchema: loginValidations,
+
+      onSubmit: async (values) => {
+        try {
+          await dispatch(login(values))
+          navigate('dashbord');
+        } catch (err) {
+          alert("err")
+       }
+
+      }
+    })
+
     return (
         <div className ='login'>
-           <form className='form1'>
+           <form className='form1' onSubmit={formik.handleSubmit}>
              
                 <h2>Welcome Back</h2>
                 <h5>Login to your account</h5>
@@ -21,13 +44,18 @@ const Login = () => {
                 <h3>ABC COMPANY</h3>
                 <div className="mb-3 mt-3">
                     <label  className="form-label">User Name</label>
-                    <input type="text" className="form-control" id="exampleFormControlInput1" placeholder="Jone.Doe@gmail.com"/>
+                    <input value={formik.values.username} type="text" className="form-control" onChange={formik.handleChange} name='username' id="username"  placeholder="Jone.Doe@gmail.com"/>
                 </div>
-
+                {formik.errors.username ? (
+                <span className="text-danger block">{formik.errors.username}</span>
+              ) : null}
                 <div>
                     <label  className="form-label">Password</label>
-                    <input type="password" id="inputPassword5" className="form-control" aria-labelledby="passwordHelpBlock"/>
+                    <input value={formik.values.password} type="password"  onChange={formik.handleChange} name='password'  id="password" className="form-control" aria-labelledby="passwordHelpBlock"/>
                 </div>
+                {formik.errors.password ? (
+                <span className="text-danger block">{formik.errors.password}</span>
+              ) : null}
                 <div><button type="submit" className=" btn-primary Loginbtn mt-5">Login</button></div>
                 <div  className="form-text mt-3">
                     Still Have No account ? <span className="text-warning " onClick={onClicAbout} >SIGNUP </span> Now

@@ -27,7 +27,7 @@ const Buttons = () => {
   };
 
     return (
-        <div className="d-flex align-items-end flex-column p-0 me-4">
+        <div className="d-flex align-items-end flex-column p-0 me-4 mt-5">
                 <div className="mt-5 buttons ">
                     <div> <button type="button" className="btnDash" style={{color:fontColor}} onClick={handleButtonClick}>Edit Profile</button></div>  
                     <div> <button type="button" className="btnDash1" style={{color:fontColor2}} onClick={handleButton2Click}>Sign Out</button></div>  

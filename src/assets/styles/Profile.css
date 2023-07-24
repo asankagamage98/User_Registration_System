@@ -1,0 +1,68 @@
+.maindiv{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 92.6vh;
+    color: black;
+    font-weight: bold;
+}
+.seconddiv{
+    width: 450px;
+    background-color: rgb(255, 255, 255);
+}
+
+
+.displaytext {
+    width:225px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    margin-right:10px;
+    color: #9B9A9A;
+}
+.labletext {
+    width: 225px;
+    
+}
+
+
+
+  .image-container {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    
+  }
+  
+  .profileImage {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .circle-background {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background-color: #9B9A9A;
+    border-radius: 50%;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .fa-circle-plus {
+    font-size: 30px;
+    color: black;
+    background-color: #9B9A9A;
+  }
+
+.maintopic {
+    margin-top:120px;
+}

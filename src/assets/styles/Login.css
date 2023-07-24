@@ -72,13 +72,14 @@
 }
 
 .Loginbtn  {
-    width: 380px ;
-    height:45px; 
-    background-color:#205387 !important;
-    border-radius: 5px ;
-    font-weight: bold;
+    width: 380px;
+    height:45px;
     color: #ffff;
-    
+    font-weight: bold;
+    background-color:#205387 !important;
+    border-radius: 6px;
+    border: none;
+    box-shadow: none !important;
 
 
 }
