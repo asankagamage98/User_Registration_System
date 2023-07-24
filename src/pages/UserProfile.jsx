@@ -17,7 +17,7 @@ const UserProfile = () => {
                     <div className="maintopic ms-3">
                         <h3 className=" font-bold ">Welcome</h3>
                         <h2 className=" font-bold d-flex wrap">
-                            {/* {user?.name} */}Mr.Jhone Broker
+                              Mr.Jhone Broker
                         </h2>
                     </div>
                 </div>

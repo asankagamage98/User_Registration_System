@@ -1,0 +1,36 @@
+
+.msgdiv1 {
+    width: 400px;
+    height: 250px;
+    background-color: #fff;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.msgdiv{
+    background-color:#205387;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.iconSuccess{
+    color:#0ECE00 ;
+    font-size: 70px;
+}
+
+.msgdiv1 p {
+    line-height: 1; 
+    margin: 0; 
+  }
+
+  .loginbtn{
+    height: 40px;
+    width:350px;
+  }

@@ -8,6 +8,7 @@ import EditUserProfile from '../pages/EditProfile'
 import SingUp from '../components/SignUp'
 import Dashboard from "../components/Dashboard";
 import UploadImage from "../components/UploadImage";
+import Massage from "../components/Massage";
 
 
 
@@ -18,6 +19,8 @@ const Routers = () => {
           <Routes>
                 <Route  index element={<Login />} />
                 <Route path='singup' element={<SingUp/>}/>
+                   <Route path='massage' element={<Massage/>}/>
+                
                
 
 
