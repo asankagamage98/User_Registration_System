@@ -27,9 +27,10 @@ const SignUp = () => {
             onSubmit: async (values) => {
                 try {
                     await AuthService.signup(values);
-                    navigate("massage")
+                    await navigate("/singup/massage");
+                    
                 } catch (err) {
-                    navigate("/singup")
+                    navigate("singup")
                 }
             } 
         })

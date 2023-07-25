@@ -8,7 +8,7 @@ import EditUserProfile from '../pages/EditProfile'
 import SingUp from '../components/SignUp'
 import Dashboard from "../components/Dashboard";
 import UploadImage from "../components/UploadImage";
-import Massage from "../components/Massage";
+import Message from "../components/Message";
 
 
 
@@ -18,21 +18,17 @@ const Routers = () => {
        
           <Routes>
                 <Route  index element={<Login />} />
-                <Route path='singup' element={<SingUp/>}/>
-                   <Route path='massage' element={<Massage/>}/>
                 
-               
-
-
+                <Route path='singup' element={<SingUp/>}/>
+                <Route path='/singup/massage' element={<Message/>}/>
+      
+                
                 <Route  path="dashbord" element={<Dashboard/>}>
                     <Route index   element={<UserProfile/>}/>
                     <Route path="userdetails" element={<Outlet/>}/>
                     <Route path="uploadImage" element={<UploadImage/>}/>
                     <Route path="editProfile" element={<EditUserProfile/>}/>
-                
-
-                </Route>
-                
+                </Route>    
           </Routes>
        
       </div>
